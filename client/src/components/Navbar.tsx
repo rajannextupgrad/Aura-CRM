@@ -21,12 +21,14 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Link href="/login" className="hidden md:block text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/dashboard" className="hidden md:block text-sm font-medium hover:text-primary transition-colors">
             Log in
           </Link>
-          <Button className="bg-white text-black hover:bg-white/90 font-semibold rounded-full px-6">
-            Get Started
-          </Button>
+          <Link href="/dashboard">
+            <Button className="bg-white text-black hover:bg-white/90 font-semibold rounded-full px-6">
+              Get Started
+            </Button>
+          </Link>
           <button className="md:hidden text-muted-foreground">
             <Menu className="h-6 w-6" />
           </button>
