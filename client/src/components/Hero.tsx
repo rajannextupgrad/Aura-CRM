@@ -37,7 +37,7 @@ export default function Hero() {
 
           <h1 className="text-5xl md:text-7xl font-bold font-display leading-[1.1] mb-6 gradient-text">
             The CRM that <br />
-            <span className="text-white">thinks before you do. demo</span>
+            <span className="text-white">thinks before you do.</span>
           </h1>
 
           <p className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
@@ -158,8 +158,12 @@ export default function Hero() {
                   Targeting: Acme Corp, TechStart, Global Dyn...
                 </p>
                 <div className="mt-3 flex gap-2">
-                  <div className="h-6 w-16 bg-white/10 rounded animate-pulse" />
-                  <div className="h-6 w-16 bg-white/10 rounded animate-pulse" />
+                  <button className="px-3 py-1.5 rounded bg-primary text-white text-xs font-medium hover:bg-primary/90 transition-colors">
+                    Approve All
+                  </button>
+                  <button className="px-3 py-1.5 rounded bg-white/10 text-white text-xs font-medium hover:bg-white/20 transition-colors">
+                    Edit Selection
+                  </button>
                 </div>
               </motion.div>
             </div>
